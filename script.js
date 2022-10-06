@@ -16,6 +16,15 @@ btns1.forEach(function (btn1) {
             counter1 ++
         }
         alpProd.textContent = counter1
+
+
+        let alpCheck = document.querySelector('.alpine_finalCheck_product');
+
+
+        let alpAmount = counter1
+        let alpPrice = alpAmount*3.15;
+
+        alpCheck.textContent = alpPrice  + ' $'
     })
 })
 
@@ -37,30 +46,18 @@ btns2.forEach(function (btn2) {
             counter2 ++
         }
         milkProd.textContent = counter2;
+
+        let milkCheck = document.querySelector('.milka_finalCheck_product');
+
+
+        let milkAmount = counter2
+        let milkPrice = milkAmount*4.99;
+
+        milkCheck.textContent = milkPrice  + ' $'
+
     })
 })
 
-
-
-let alpCheck = document.querySelector('.alpine_finalCheck_product');
-
-
-let alpAmount = counter1
-let alpPrice = alpAmount*3.15;
-
-alpCheck.textContent = alpPrice  + ' $'
-
-console.log(alpCheck)
-
-
-
-let milkCheck = document.querySelector('.milka_finalCheck_product');
-
-
-let milkAmount = counter2
-let milkPrice = milkAmount*4.99;
-
-milkCheck.textContent = milkPrice  + ' $'
 
 
 
