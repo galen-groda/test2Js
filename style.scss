@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(176, 204, 201, 0.47);
+
+}
+
+.block {
+  min-height: 500px;
+  max-width: 700px;
+  background-color: #b0ccc9;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid black;
+  box-shadow: 0 0 5px black;
+
+  .newTittle {
+    font-weight: 600;
+    font-style: italic;
+
+  }
+  .basketProduct {
+
+    .grid_products {
+      display: grid;
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(2, 200px);
+      grid-gap: 20px;
+
+      .item_product {
+        border: 2px solid blue;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.8s ease;
+
+        &:hover {
+          transition: all 0.8s ease;
+          border: 2px solid red;
+
+          img {
+            scale: 1.1;
+            transition: all 0.8s ease;
+          }
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          transition: all 0.8s ease;
+        }
+
+      }
+      .name_product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+        border: 1px solid grey;
+      }
+      .calc_product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkgray;
+        border: 1px solid grey;
+
+        button {
+          padding: 5px 15px;
+          background-color: rgba(75, 67, 67, 0.45);
+          transition: all 0.8s ease ;
+          margin: 10px;
+          border: 2px solid grey;
+          border-radius: 5px;
+
+          &:active  {
+            scale: 0.8;
+          }
+        }
+        span {
+          font-size: 22px;
+          font-weight: 700;
+        }
+      }
+      .finalCheck_product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        font-weight: 800;
+        background-color: #a88e8e;
+        border: 1px solid grey;
+      }
+    }
+  }
+  .totalBill {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    align-items: center;
+
+  }
+  .btnCheck {
+    display: flex;
+    justify-content: end;
+    .btn_check {
+      height: 40px;
+      width: 100px;
+      margin-bottom: 10px;
+      transition: all 0.8s ease;
+
+      &:hover {
+        background-color: darkgray;
+        transition: all 0.8s ease;
+      }
+      &:active  {
+        scale: 0.85;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}
