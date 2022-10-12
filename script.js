@@ -18,7 +18,7 @@ btns1.forEach(function (btn1) {
         const style1 = e.currentTarget.classList;
 
         if (style1.contains('decrease')) {
-            if (counter1 < 1) {
+            if (counter1 <= 1) {
                 counter1 = 1
             } else {
                 counter1 --
@@ -34,9 +34,7 @@ btns1.forEach(function (btn1) {
 
         let alpAmount = counter1
 
-        let alpPrice = alpAmount*3.15;
-
-        alpCheck.textContent = alpPrice  + ' $'
+        alpCheck.textContent = alpAmount*3.15;
     })
 })
 
@@ -61,7 +59,7 @@ btns2.forEach(function (btn2) {
         const style2 = e.currentTarget.classList;
 
         if (style2.contains('decrease')) {
-            if (counter2 < 1) {
+            if (counter2 <= 1) {
                 counter2 = 1
             } else {
                 counter2 --
@@ -77,9 +75,8 @@ btns2.forEach(function (btn2) {
 
         let milkAmount = counter2;
 
-        let milkPrice = milkAmount*4.99;
+        milkCheck.textContent = milkAmount*4.99;
 
-        milkCheck.textContent = milkPrice  + ' $'
     })
 })
 
@@ -89,7 +86,10 @@ let btnCheckout = document.querySelector(".btn_check");
 
 btnCheckout.addEventListener('click', function () {
 
-    let finTot = milkProd + alpProd;
+    let finTot = alpPrice+milkPrice;
     finalCheck.textContent = finTot + " $";
 })
 
+console.log(btnCheckout)
+console.log(finalCheck)
+console.log(alpPrice)
