@@ -101,6 +101,10 @@
   gap: 50px;
   align-items: center;
 }
+.block .totalBill .test1 {
+  display: flex;
+  flex-direction: column;
+}
 .block .btnCheck {
   display: flex;
   justify-content: end;

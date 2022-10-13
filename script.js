@@ -86,10 +86,8 @@ let btnCheckout = document.querySelector(".btn_check");
 
 btnCheckout.addEventListener('click', function () {
 
-    let finTot = alpPrice+milkPrice;
+    let alpPriceSum = +document.querySelector('.alpine_finalCheck_product').textContent;
+    let milkPriceSum = +document.querySelector('.milka_finalCheck_product').textContent;
+    let finTot = alpPriceSum + milkPriceSum;
     finalCheck.textContent = finTot + " $";
 })
-
-console.log(btnCheckout)
-console.log(finalCheck)
-console.log(alpPrice)
