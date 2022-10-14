@@ -80,14 +80,21 @@ btns2.forEach(function (btn2) {
     })
 })
 
+// final result with total check and total amount of product
 
-let finalCheck = document.querySelector('.test1');
+let finalCheck = document.querySelector('.totalCheck');
 let btnCheckout = document.querySelector(".btn_check");
+let totalAmount = document.querySelector('.totalAmount');
 
 btnCheckout.addEventListener('click', function () {
 
     let alpPriceSum = +document.querySelector('.alpine_finalCheck_product').textContent;
     let milkPriceSum = +document.querySelector('.milka_finalCheck_product').textContent;
+
+    let finAmountOfProduct = +alpProd.textContent + +milkProd.textContent;
     let finTot = alpPriceSum + milkPriceSum;
     finalCheck.textContent = finTot + " $";
+    totalAmount.textContent = finAmountOfProduct + " itm";
+
 })
+
