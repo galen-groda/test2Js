@@ -63,13 +63,15 @@
   align-items: center;
   background-color: azure;
   border: 1px solid grey;
+  border-radius: 5px;
 }
 .block .basketProduct .grid_products .calc_product {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
+  background-color: #8cbbb6;
   border: 1px solid grey;
+  border-radius: 5px;
 }
 .block .basketProduct .grid_products .calc_product button {
   padding: 5px 15px;
@@ -92,8 +94,9 @@
   align-items: center;
   font-style: italic;
   font-weight: 800;
-  background-color: #a88e8e;
+  background-color: #78c2bd;
   border: 1px solid grey;
+  border-radius: 5px;
 }
 .block .totalBill {
   display: flex;
@@ -116,8 +119,9 @@
   transition: all 0.8s ease;
 }
 .block .btnCheck .btn_check:hover {
-  background-color: darkgray;
+  background-color: #78c2bd;
   transition: all 0.8s ease;
+  color: black;
 }
 .block .btnCheck .btn_check:active {
   scale: 0.85;
