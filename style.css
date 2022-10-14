@@ -75,7 +75,7 @@
 }
 .block .basketProduct .grid_products .calc_product button {
   padding: 5px 15px;
-  background-color: rgba(75, 67, 67, 0.45);
+  background-color: #4ca29d;
   transition: all 0.8s ease;
   margin: 10px;
   border: 2px solid grey;
