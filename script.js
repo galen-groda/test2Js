@@ -34,7 +34,7 @@ btns1.forEach(function (btn1) {
 
         let alpAmount = counter1
 
-        alpCheck.textContent = alpAmount*3.15;
+        alpCheck.textContent = Math.floor((alpAmount*3.15)*100)/100;
     })
 })
 
@@ -75,7 +75,7 @@ btns2.forEach(function (btn2) {
 
         let milkAmount = counter2;
 
-        milkCheck.textContent = milkAmount*4.99;
+        milkCheck.textContent = Math.floor(milkAmount*4.99*100)/100;
 
     })
 })
@@ -92,7 +92,7 @@ btnCheckout.addEventListener('click', function () {
     let milkPriceSum = +document.querySelector('.milka_finalCheck_product').textContent;
 
     let finAmountOfProduct = +alpProd.textContent + +milkProd.textContent;
-    let finTot = alpPriceSum + milkPriceSum;
+    let finTot = Math.floor((alpPriceSum + milkPriceSum)*100)/100;
     finalCheck.textContent = finTot + " $";
     totalAmount.textContent = finAmountOfProduct + " itm";
 
